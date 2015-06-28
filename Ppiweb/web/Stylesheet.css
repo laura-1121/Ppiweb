@@ -1,0 +1,396 @@
+body{
+    height:100%;
+    margin:0px;
+    padding:15px;
+    background-color:white;
+    background-image:url('Imagenes/fondo3.jpg');
+    font-family:Arial,Helvetica,sans-serif;
+    line-height:15px;
+    font-size:100%;
+}
+#logo
+{
+    border-radius:100%;
+    border:solid 4px #ccc;
+    border-color:white;
+}
+#Contenido
+{
+    width:1060px;
+    height:800px;
+    margin:0 auto;
+    text-align:center;
+    z-index:100;
+    position:relative;
+    z-index:2; 
+}
+nav ul ul {
+    display:none;
+}
+
+#link {
+    text-decoration: none;
+    color: white;
+}
+
+h1{
+    background-color:#0099FF;
+}
+
+h2{
+    text-align: center;
+    color:black;
+    background-color:#0099FF;
+}
+
+p{
+    color:black;
+    font-size:medium;
+    font-style:italic;
+}
+
+label{
+    color:black;
+    font-size:medium;
+    font-style:italic;
+}
+
+ul#menu{
+    z-index:10;
+}
+
+nav ul li:hover> ul {
+    display:block;
+}
+nav ul {
+    background:#efefef;
+    border-bottom:white;
+    border-bottom-color:white;
+    background:linear-gradient (top, #efefef 0%, #bbbbbb 100%);
+    background:-moz-linear-gradient (top, #efefef 0%, #bbbbbb 100%);
+    background:-webkit-lineal de gradiente (arriba, #efefef 0%, #bbbbbb 100%);
+    box-shadow:0px 0px 9px rgba (0,0,0,0.15);
+    padding:0px 0;
+    border-radius:10px;
+    border:solid 4px #ccc;
+    border-color:#0099FF;
+    list-style:none;
+    position:relative;
+    display:inline-table;
+}
+nav ul:after {
+    content:â€œâ€; clear:both; display:block;
+}
+nav ul li {
+    float:left;
+}
+nav ul li:hover {
+    background:#4b545f;
+    background:linear-gradient (top, #4f5964 0%, #5f6975 40%);
+    background:-moz-linear-gradient (top, #4f5964 0%, #5f6975 40%);
+    background:-webkit-lineal de gradiente (arriba, #4f5964 0%, #5f6975 40%);
+}
+nav ul li:hover a {
+    color:#fff;
+}
+
+nav ul li a {
+    display:block; padding:20px 49px;
+    color:#000000; text-decoration:none;
+}
+nav ul ul {
+    background:#5f6975; border-radius:0px; padding:0;
+    position:absolute; superior:100%;
+}
+nav ul ul li {
+    float:none;
+    border-top:1px solid #6b727c;
+    border-bottom:1px solid #575f6a;
+    position:relative;
+}
+nav ul ul li a {
+    padding:15px 60px;
+    color:#fff;
+}
+nav ul ul li a:hover {
+    background:#4b545f;
+}
+nav ul ul ul {
+    position:absolute; restante:100%; top:0;
+}
+#TextoPrincipal
+{
+    width:590px;
+    height:470px;
+    float:left;
+    background-color:#efefef;
+    border:solid 4px #ccc;
+    border-color:#0099FF;
+    color:#000000;
+    text-align:left;
+    border-radius:20px;
+    padding:10px;
+    box-shadow:0px 0px 10px rgba(0,0,0,0.5);
+}
+#InicioSesion
+{
+    width:370px;
+    height:220px;
+    float:right;
+    background-color:#efefef;
+    border:solid 4px #ccc;
+    border-color:#0099FF;
+    color:#000000;
+    text-align:center;
+    border-radius:20px;
+    padding:10px;
+    box-shadow:0px 0px 10px rgba(0,0,0,0.5);
+}
+
+#RecordarClave
+{
+    width:700px;
+    height:200px;
+    float:right;
+    background-color:#efefef;
+    border:solid 4px #ccc;
+    border-color:#0099FF;
+    color:#000000;
+    text-align:left;
+    border-radius:20px;
+    padding:10px;
+    box-shadow:0px 0px 10px rgba(0,0,0,0.5);
+}
+
+#MenuIzquierdo
+{
+    width:170px;
+    height:440px;
+    float:left;
+    background-color:#efefef;
+    border:solid 4px #ccc;
+    border-color:#0099FF;
+    color:#000000;
+    text-align:left;
+    border-radius:20px;
+    padding:10px;
+    box-shadow:0px 0px 10px rgba(0,0,0,0.5);
+}
+
+#Registrarse
+{
+    width:800px;
+    height:440px;
+    float:right;
+    background-color:#efefef;
+    border:solid 4px #ccc;
+    border-color:#0099FF;
+    color:#000000;
+    text-align:left;
+    border-radius:20px;
+    padding:10px;
+    box-shadow:0px 0px 10px rgba(0,0,0,0.5);
+}
+
+input[type=text], [type=password], [type=email] {
+    width:200px;
+    height:25px;
+    margin-left:0px;
+    margin-top:10px;
+    padding-left:10px;
+    border-radius:5px;
+    font-size:100%;
+    outline:none;
+    border:0px;
+    background-color:white;
+}
+select[class=form-control] {
+    width:200px;
+    height:25px;
+    margin-left:0px;
+    margin-top:10px;
+    padding-left:10px;
+    border-radius:5px;
+    font-size:100%;
+    outline:none;
+    border:0px;
+    background-color:white;
+}
+
+textarea[class=form-control] {
+    width:200px;
+    height:100px;
+    margin-left:0px;
+    margin-top:10px;
+    padding-left:10px;
+    border-radius:5px;
+    font-size:100%;
+    outline:none;
+    border:0px;
+    background-color:white;
+}
+
+button[type=submit], [type=reset] {
+    margin:20px;
+    margin-bottom:5px;
+    width:110px;
+    height:25px;
+    outline:none;
+    border:0px;
+    background-color:#5b74a8;
+    color:white;
+    font-size:100%;
+    border-radius:5px;
+    
+    -webkit-box-shadow:0px 2px 0px #2f477a;
+}
+#Siguenos
+{
+    width:370px;
+    height:200px;
+    float:right;
+    background-color:#efefef;
+    border:solid 4px #ccc;
+    border-color:#0099FF;
+    color:#000000;
+    text-align:center;
+    margin-top:20px;
+    border-radius:20px;
+    padding:10px;
+    box-shadow:0px 0px 10px rgba(0,0,0,0.5);
+}
+
+#Mision 
+{
+    width:400px;
+    height:270px;
+    float:left;
+    background-color:#efefef;
+    border:solid 4px #ccc;
+    border-color:#0099FF;
+    color:#000000;
+    text-align:center;
+    border-radius:20px;
+    padding:10px;
+    box-shadow:0px 0px 10px rgba(0,0,0,0.5);
+}
+ 
+#Vision 
+{
+    width:400px;
+    height:270px;
+    float:right;
+    background-color:#efefef;
+    border:solid 4px #ccc;
+    border-color:#0099FF;
+    color:#000000;
+    text-align:center;
+    border-radius:20px;
+    padding:10px;
+    box-shadow:0px 0px 10px rgba(0,0,0,0.5);
+}
+  
+#Historia 
+{
+    width:370px;
+    height:300px;
+    float:left;
+    background-color:#efefef;
+    border:solid 4px #ccc;
+    border-color:#0099FF;
+    color:#000000;
+    text-align:center;
+    border-radius:20px;
+    padding:10px;
+    box-shadow:0px 0px 10px rgba(0,0,0,0.5);
+}
+
+#Informacion
+{
+    width:450px;
+    height:350px;
+    float:left;
+    background-color:#efefef;
+    border:solid 4px #ccc;
+    border-color:#0099FF;
+    color:#000000;
+    text-align:left;
+    border-radius:20px;
+    padding:10px;
+    box-shadow:0px 0px 10px rgba(0,0,0,0.5);
+}
+
+#MenuPrincipal
+{
+    width:800px;
+    height:440px;
+    float:right;
+    background-color:#efefef;
+    border:solid 4px #ccc;
+    border-color:#0099FF;
+    color:#000000;
+    text-align:left;
+    border-radius:20px;
+    padding:10px;
+    box-shadow:0px 0px 10px rgba(0,0,0,0.5);
+}
+
+#MensajeContacto
+{
+    width:500px;
+    height:350px;
+    float:right;
+    background-color:#efefef;
+    border:solid 4px #ccc;
+    border-color:#0099FF;
+    color:#000000;
+    text-align:center;
+    border-radius:20px;
+    padding:10px;
+    box-shadow:0px 0px 10px rgba(0,0,0,0.5);
+}
+
+#Cliente
+{
+    width:800px;
+    height:400px;
+    float:right;
+    background-color:#efefef;
+    border:solid 4px #ccc;
+    border-color:#0099FF;
+    color:#000000;
+    text-align:left;
+    border-radius:20px;
+    padding:10px;
+    box-shadow:0px 0px 10px rgba(0,0,0,0.5);
+}
+
+#Empleado
+{
+    width:800px;
+    height:550px;
+    float:right;
+    background-color:#efefef;
+    border:solid 4px #ccc;
+    border-color:#0099FF;
+    color:#000000;
+    text-align:left;
+    border-radius:20px;
+    padding:10px;
+    box-shadow:0px 0px 10px rgba(0,0,0,0.5);
+}
+
+#Proveedores
+{
+    width:800px;
+    height:320px;
+    float:right;
+    background-color:#efefef;
+    border:solid 4px #ccc;
+    border-color:#0099FF;
+    color:#000000;
+    text-align:left;
+    border-radius:20px;
+    padding:10px;
+    box-shadow:0px 0px 10px rgba(0,0,0,0.5);
+}
