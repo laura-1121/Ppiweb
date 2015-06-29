@@ -1,8 +1,3 @@
-<%-- 
-    Document   : Registrarse
-    Created on : 28-jun-2015, 17:46:04
-    Author     : Laura
---%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
