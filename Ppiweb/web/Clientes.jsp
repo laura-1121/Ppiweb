@@ -6,17 +6,17 @@
     <head>
         <title>Pedidos más Pedidos</title>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="Stylesheet.css">
-	<link rel="icon" href="Imagenes/LogoIcono.ico" type="image/x.icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- aqui le estamos dando varios tamaños a la pagina, para que se adapte a la ventana-->
+        <link rel="stylesheet" type="text/css" href="Stylesheet.css">   <!-- definimos donde se encuentran los estilos de la pagina -->
+	<link rel="icon" href="Imagenes/LogoIcono.ico" type="image/x.icon"> <!-- definimos el icono a mostrar en la pestaña de la pagina -->
     </head>
     <body>
-        <div id="Contenido">
+        <div id="Contenido">      <!-- comenzamos a construir el esquema de la pagina -->
             <header>
-                <img id="logo" src="Imagenes/Logoo3.png"  width="250" height="200">
+                <img id="logo" src="Imagenes/Logoo3.png"  width="250" height="200"> <!-- definimos la imagen que deseamos utilizar como fondo de la pag -->
                 <nav>
-                <ul id="menu">
-                    <li><a href="index.html"><strong><em>Inicio</em></strong></a></li>
+                <ul id="menu">                           <!-- creamos Una barra con diferentes modulos en el menu ppal -->
+                    <li><a href="index.html"><strong><em>Inicio</em></strong></a></li> 
                     <li><a href="#"><strong><em>Nuestra compañia</em></strong></a>
                         <ul id="sub-menu">
                             <li><a href="Mision.html">Misión y Visión</a></li>
@@ -37,17 +37,18 @@
             </nav>
             </header>
             
-            <div id="MenuIzquierdo">
+            <div id="MenuIzquierdo"> <!-- en este sector se modificara a largo plazo otro menu, donde encontremos mas rapido las opciones mas utilizadas -->
                 <h2>Herramientas</h2>
                 <p>
 
                 </p>
             </div>
             <div id="Cliente">
-                <h2>Registrar Empleado</h2>
+                <h2>Registrar Empleado</h2>    <!-- En este sector se declaran los datos requeridos para el registro en la pag -->
                 <p>
                 Los campos con (*) son campos obligatorios. <br>
-                <br>
+                <br> 
+                <!-- aqui tenemos los campos del formulario de clientes con los input para ingresar-->
                 Tipo Documento: &nbsp;&nbsp;&nbsp;&nbsp; <select class="form-control" id="TipoDocumento" name="Asunto">
                                                         <option value> Seleccione</option>
                                                         <option value> Nit</option>
@@ -67,6 +68,7 @@
                 Celular: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" id="Celular" name="Celular" placeholder=" "/> <br>
                 Dirección: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" id="Telefono" name="Telefono" placeholder=" "/> &nbsp;&nbsp;&nbsp;
                 Correo: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="email" id="Celular" name="Celular" placeholder=" "/> <br>
+                <!-- aqui tenemos los botones de la pagina -->
                 <center><button type="submit" value="Registrar">Registrar</button> <button type="reset" > Limpiar</button> </center>
             </div>
         </div>

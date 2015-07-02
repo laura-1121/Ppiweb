@@ -1,11 +1,11 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
 package Model;
 
+
+/*Librerias importadas por defecto 
+ * para el buen funcionamiento de los metodos
+ *
+ */
 import java.io.Serializable;
 import java.util.Date;
 import javax.persistence.Basic;
@@ -19,10 +19,11 @@ import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.xml.bind.annotation.XmlRootElement;
 
-/**
- *
- * @author Laura
+
+ /*  Estas son las consultas que se generan
+ *  ´por defecto
  */
+
 @Entity
 @Table(name = "CLIENTES")
 @XmlRootElement
@@ -37,13 +38,19 @@ import javax.xml.bind.annotation.XmlRootElement;
     @NamedQuery(name = "Clientes.findByGeneroCliente", query = "SELECT c FROM Clientes c WHERE c.generoCliente = :generoCliente"),
     @NamedQuery(name = "Clientes.findByFechNacCliente", query = "SELECT c FROM Clientes c WHERE c.fechNacCliente = :fechNacCliente"),
     @NamedQuery(name = "Clientes.findByCelCliente", query = "SELECT c FROM Clientes c WHERE c.celCliente = :celCliente")})
+
+
+/* Aqui tenemos las columnas de la tabla Clientes
+ *  Con su respectivo tipo de dato 
+ *
+ */
 public class Clientes implements Serializable {
-    private static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = 1L;   
     @Id
     @Basic(optional = false)
-    @Column(name = "ID_CLIENTE")
-    private String idCliente;
-    @Column(name = "TIPODOC_CLIENTE")
+    @Column(name = "ID_CLIENTE")                        
+    private String idCliente;                               
+    @Column(name = "TIPODOC_CLIENTE")                   
     private String tipodocCliente;
     @Column(name = "NOMBRE_CLIENTE")
     private String nombreCliente;
@@ -60,35 +67,42 @@ public class Clientes implements Serializable {
     private Date fechNacCliente;
     @Column(name = "CEL_CLIENTE")
     private String celCliente;
+    
+    
+    /* Este metodo contiene los get y los set ( los get son para guardar
+     * la información y los set son para llevar la información) 
+     *
+     */
 
-    public Clientes() {
+    public Clientes() {       
+        
     }
 
-    public Clientes(String idCliente) {
+    public Clientes(String idCliente) {     
         this.idCliente = idCliente;
     }
 
-    public String getIdCliente() {
+    public String getIdCliente() {          
         return idCliente;
     }
 
-    public void setIdCliente(String idCliente) {
+    public void setIdCliente(String idCliente) {      
         this.idCliente = idCliente;
     }
 
-    public String getTipodocCliente() {
+    public String getTipodocCliente() {     
         return tipodocCliente;
     }
 
-    public void setTipodocCliente(String tipodocCliente) {
+    public void setTipodocCliente(String tipodocCliente) {   
         this.tipodocCliente = tipodocCliente;
     }
 
-    public String getNombreCliente() {
+    public String getNombreCliente() {             
         return nombreCliente;
     }
 
-    public void setNombreCliente(String nombreCliente) {
+    public void setNombreCliente(String nombreCliente) {     
         this.nombreCliente = nombreCliente;
     }
 
@@ -140,17 +154,27 @@ public class Clientes implements Serializable {
         this.celCliente = celCliente;
     }
 
+    
+    /* Se agrupan objetos en base al calculo
+    *  de los HashCode
+    */
+    
     @Override
-    public int hashCode() {
+    public int hashCode() {          
         int hash = 0;
         hash += (idCliente != null ? idCliente.hashCode() : 0);
         return hash;
     }
 
+    
+    /* Valida que el id del cliente
+    *  no sea existente en la base de datos 
+    */
+    
     @Override
-    public boolean equals(Object object) {
-        // TODO: Warning - this method won't work in the case the id fields are not set
-        if (!(object instanceof Clientes)) {
+    public boolean equals(Object object) {        
+        
+        if (!(object instanceof Clientes)) {   
             return false;
         }
         Clientes other = (Clientes) object;
@@ -160,9 +184,16 @@ public class Clientes implements Serializable {
         return true;
     }
 
-    @Override
+    /* Devuelve el Id del cliente
+    *
+    */
+    @Override                                    
     public String toString() {
         return "Model.Clientes[ idCliente=" + idCliente + " ]";
+    }
+
+    public void addClientes(Clientes clientes) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
 }
